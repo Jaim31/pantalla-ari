@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    } 
+
+.container {
+    display: grid;
+    width: 100%; /* Ajusta el ancho del contenedor según tus necesidades */
+    height: 30%;
+    max-width: 100%; /* Ancho máximo del contenedor */
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-template-rows: auto auto; /* Tres filas de igual tamaño */
+    row-gap: 2% ;
+    margin-top: 2%;
+}
+
+
+.clock-container{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 20%;
+    color: white;
+}
+    
+
+.widget1 ,  .widget2 , .widget3 , .widget4{
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.widget3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+}
+
+
+.display{
+    display: inline-block;
+}
+
+.clock-container {
+    display: flex;
+    
+
+}
+
+.time {
+    font-size: 58px; /* Tamaño de fuente para la hora */
+    margin: 0;
+}
+
+.date {
+    font-size: 40px; /* Tamaño de fuente para la fecha */
+    align-content: flex-end;
+    margin: 0;
+}
+
+
